@@ -1,0 +1,71 @@
+body {
+    font-family: Optima, sans-serif;
+    background-color: thistle;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.filters {
+    padding: 10px 40px;
+    border-bottom: 3px solid rgba(240, 115, 12, 0.125);
+    display: flex;
+}
+
+dd{
+    background-color: rgb(172, 236, 236);
+    color:blueviolet;
+}
+.activity {
+    padding: 10px 40px;
+    color: rgb(27, 202, 233);
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+}
+
+
+.card {
+    min-width: 180px;
+    min-height: 80px;
+    border: 3px solid rgba(119, 4, 75, 0.125);
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 20px;
+}
+
+.card-title {
+    background-color: rgba(0,0,0,.03);
+    border-bottom: 3px solid rgba(238, 20, 104, 0.125);
+    padding: 10px;
+}
+
+.card-body {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 10px;
+    background-color: rgba(165, 142, 175, 0.342);
+}
+
+button {
+    border-radius: 20px;
+    background-color: rgb(204, 9, 100);
+    color:wheat;
+    padding: 10px;
+    border: 0;
+    appearance: none;
+    outline: none;
+    height: fit-content;
+    align-self: center;
+}
