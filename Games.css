@@ -3,32 +3,11 @@ body {
     background-color: thistle;
 }
 
-
-.flex-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.filters {
-    padding: 10px 40px;
-    border-bottom: 3px solid rgba(240, 115, 12, 0.125);
-    display: flex;
-}
-
-dd{
-    background-color: rgb(172, 236, 236);
-    color:blueviolet;
-}
-.activity {
+.games {
     padding: 10px 40px;
     color: rgb(27, 202, 233);
     font-weight: bold;
 }
-
-.error {
-    color: red;
-}
-
 
 .card {
     min-width: 180px;
@@ -50,12 +29,6 @@ dd{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.input-group {
-    display: flex;
-    margin-bottom: 10px;
-    background-color: rgba(165, 142, 175, 0.342);
 }
 
 button {
