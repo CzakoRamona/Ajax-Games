@@ -2,6 +2,7 @@
 //VARIANTA 2 aici imi da erore [object object]
 var baseUrl ="https://games-world.herokuapp.com/games";
 
+
 async function getGames() {
 
 let response=await fetch (baseUrl);
@@ -55,9 +56,12 @@ GamesElement.appendChild(descriptionElement);
   return value;     // return the unchanged property value.
 });*/
 });
-getGames.appendChild(GamesElement);
+
+return this.descriptionElement
 }
-getGames("");
+getGames()
+
+
 
 
 //varianta1 nu am reusit mai mult ....url imi da mereu eroare 404 not found nu stiu de ce....
