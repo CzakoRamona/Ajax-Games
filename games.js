@@ -32,15 +32,15 @@ json.forEach( Games=> {
 
  const idElement=document.createElement("div");
  idElement.classList.add("_id");
- listElement.appendChild(idElement);
+ GamesElement.appendChild(idElement);
 
  const titleElement=document.createElement("div");
  titleElement.classList.add("title");
- idElement.appendChild(titleElement);
+ GamesElement.appendChild(titleElement);
 
  const gameImageElement=document.createElement("div");
  gameImageElement.classList.add("gameImage");
- titleElement.appendChild(gameImageElement);
+ GamesElement.appendChild(gameImageElement);
 
  const imageElement=document.createElement("img");
 imageElement.src=Games;
@@ -48,16 +48,16 @@ gameImageElement.appendChild(imageElement);
 
 const descriptionElement=document.createElement("div");
 descriptionElement.classList.add("description");
-listElement.appendChild(descriptionElement);
+GamesElement.appendChild(descriptionElement);
 
-JSON.parse('{_id: "5f57a9bffd90830020fa5294", title: "Gran Turismo Sport™", imageUrl: "https://psmedia.playstation.com/is/image/psmedia/g…rt-two-column-01-ps4-',(key, value) => {
+/*JSON.parse('{_id: "5f57a9bffd90830020fa5294", title: "Gran Turismo Sport™", imageUrl: "https://psmedia.playstation.com/is/image/psmedia/g…rt-two-column-01-ps4-',(key, value) => {
   console.log(key); // log the current property name, the last is "".
   return value;     // return the unchanged property value.
+});*/
 });
-});
-getGames.appendChild(listElement);
+getGames.appendChild(GamesElement);
 }
-getGames();
+getGames("");
 
 
 //varianta1 nu am reusit mai mult ....url imi da mereu eroare 404 not found nu stiu de ce....
