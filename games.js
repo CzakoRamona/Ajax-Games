@@ -15,8 +15,8 @@ async function getGames() {
 
   //<div class="games">   
 
-  //<div class="list">
-  //<div class="_id">id</div>
+
+  
   //<div class="title">title</div>
   //<div class="gameImage">
   // <img class="imageUrl" src= ""alt="game"></img>
@@ -36,10 +36,11 @@ getGames()
 
 function gameDetails(game) {
   const gameAllDivs = document.createElement("div")
-  gameAllDivs.style.border=" 2px solid green";
+  gameAllDivs.style.border=" 2px solid indigo";
   gameAllDivs.style.marginBottom="30px";
   gameAllDivs.style.Width="fit-in"
   gameAllDivs.style.margin="20px"
+  gameAllDivs.style.backgroundColor="rgba(100, 100, 200, 0.25)"
 
 
   const titleElement = document.createElement("div");
