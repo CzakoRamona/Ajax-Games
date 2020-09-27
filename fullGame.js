@@ -17,5 +17,6 @@ class Game {
     }
 }
 async function getGames() {
-    const response = await fetch()
+    const response = await fetch("https://games-world.herokuapp.com/games");
+    return response.json
 }
