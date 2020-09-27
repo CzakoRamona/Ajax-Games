@@ -36,19 +36,34 @@ getGames()
 
 function gameDetails(game) {
   const gameAllDivs = document.createElement("div")
+  gameAllDivs.style.border=" 2px solid green";
+  gameAllDivs.style.marginBottom="30px";
+  gameAllDivs.style.Width="fit-in"
+  gameAllDivs.style.margin="20px"
+
 
   const titleElement = document.createElement("div");
   titleElement.classList.add("title");
   titleElement.innerHTML = game.title
+  titleElement.style.font="italic 24px Monotype"
+  titleElement.style.color=" blue"
+  titleElement.style.margin="20px"
   gameAllDivs.appendChild(titleElement);
 
   const imageElement = document.createElement("img");
   imageElement.src = game.imageUrl;
+  imageElement.style.border=" 1px solid black";
+  imageElement.style.margin="20px"
+  imageElement.style.width="300px"
   gameAllDivs.appendChild(imageElement);
 
   const descriptionElement = document.createElement("div");
   descriptionElement.classList.add("description");
   descriptionElement.innerHTML = game.description
+  descriptionElement.style.font="italic 16px arial"
+  descriptionElement.style.color="darkblue"
+  descriptionElement.style.paddingBottom="10px";
+  descriptionElement.style.margin="20px"
   gameAllDivs.appendChild(descriptionElement);
   return gameAllDivs
 }
